@@ -1,0 +1,7 @@
+{
+  "name": "baosum",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
