@@ -4,6 +4,7 @@ import { Message, getMessages } from '../data/messages';
 import {
   IonContent,
   IonHeader,
+  IonImg,
   IonItem,
   IonList,
   IonPage,
@@ -17,6 +18,8 @@ import {
 import './Home.css';
 
 import { img } from '../util';
+
+// import imageA from '../assets/img/imagea.npm starPNG';
 
 const Home: React.FC = () => {
 
@@ -56,9 +59,9 @@ const Home: React.FC = () => {
         <IonList>
           {messages.map(m => 
             <IonItem>
-                <IonThumbnail>
-                    <img src={img(m.img)}/>
-                </IonThumbnail>
+                {/* <IonThumbnail>
+                    <IonImg></IonImg>
+                </IonThumbnail> */}
                 <MessageListItem key={m.id} message={m} />
             </IonItem>
             
