@@ -20,15 +20,29 @@ module.exports = {
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
   
+    // Add '.ts' and '.tsx' as resolvable extensions.
     resolve: {
-      // Add '.ts' and '.tsx' as resolvable extensions.
-      extensions: [".ts", ".tsx"]
+        extensions: ['', '.js', '.jsx', '.ts', '.tsx']
     },
+
+    // module: {
+    //     loaders: [
+    //       {
+    //         test: /\.jsx?$/,
+    //         loader: 'babel',
+    //         exclude: /node_modules/,
+    //         query: {
+    //           cacheDirectory: true,
+    //           presets: ['react', 'es2015']
+    //         }
+    //       }
+    //     ]
+    //   }
   
     module: {
       rules: [
         {
-          test: /\.ts(x?)$/,
+          test: /\.(js|jsx|ts|tsx)$/,
           exclude: /node_modules/,
           use: [
             {
@@ -39,7 +53,7 @@ module.exports = {
         // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
         {
           enforce: "pre",
-          test: /\.js$/,
+          test: /\.(js|jsx|tsx)$/,
           loader: "source-map-loader"
         }
       ]
