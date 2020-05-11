@@ -24,7 +24,7 @@ app.listen(app.get('port'), function () {
 
 const path = require('path');
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 // var express = require('express'),
 //     app = express();
