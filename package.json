@@ -28,7 +28,6 @@
   },
   "scripts": {
     "webpack": "webpack",
-    "start": "node server.js",
     "dev": "npm run webpack -- --mode development --watch",
     "build": "npm run webpack -- --mode production",
     "test": "react-scripts test",
