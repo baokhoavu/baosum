@@ -8,5 +8,5 @@
         "type": "image/png"
       }
     ],
-    "start_url": "https://baosum.herokuapp.com/"
+    "start_url": "./public/index.html"
 }
