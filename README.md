@@ -2,7 +2,7 @@
 
 Popular Dim Sum Items with their translated names phonetically spelled. This was created to accomodate those who aren't familiar with their names used when ordering.
 
-This was built using Ionic
+This was built using Ionic and uses Angular as it's rendering framework.
 
 # Ionic
 
